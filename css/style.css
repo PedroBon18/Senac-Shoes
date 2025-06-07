@@ -1,44 +1,43 @@
-/* Estilização globais */
-body{
+/* Estilização Global */
+body {
     background-color: #5CE0C4;
-    margin: 0px;
-    margin-top: 60px;
-    display: grid;
-    font-family: Arial, Helvetica, sans-serif;
-    gap: 60px;
-    justify-items: center;
+    margin: 0px; 
+    margin-top: 60px; /* Corrigido: removido espaço antes de "px" */
+    display: grid; /* Faz com que os elementos se comportem em grade */
+    font-family: Arial, Helvetica, sans-serif; /* Altera a família da fonte */
+    gap: 60px; /* Espaçamento entre os componentes */
+    justify-items: center; /* Centraliza horizontalmente todos os itens */
 }
 
-img{
-    max-width: 100%;
-    display: block;
+img {
+    max-width: 100%; /* A imagem ocupa 100% do elemento pai */
+    display: block; /* Comportamento de bloco */
 }
 
-
-a{
-    text-decoration: none;
+a {
+    text-decoration: none; /* Remove sublinhado de links */
 }
 
 p, h1, h2, h3 {
-    margin: 0px;
+    margin: 0px; /* Remove espaçamento padrão */
 }
 
 p {
-    font-size: 20px;
+    font-size: 20px; /* Tamanho da fonte dos parágrafos */
 }
 
-/*Estilização do menu*/
+/* Estilização do menu */
 .menu {
-    display: flex;
+    display: flex; /* Coloca links lado a lado */
     gap: 20px;
-    justify-content:center;
+    justify-content: center;
 }
 
 .menu a {
     text-transform: uppercase;
-    background-color: #ffffff;
+    background-color: #FFF;
     padding: 15px 30px;
-    color: #000;
+    color: black;
     border-radius: 8px;
 }
 
@@ -47,30 +46,74 @@ p {
 
 }
 
-/* Estilização do conteudo */
-.conteudo{
-    display:grid;
+/* Estilização do conteúdo principal */
+.conteudo {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1170px;
+    max-width: 1180px;
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 40px;
 }
 
+/* Botão de ação */
 
-.botao {
-    background-color:  #9353ff;
+   .botao {
+    background-color: #9353ff;
     padding: 15px 30px;
     border-radius: 4px;
     text-transform: uppercase;
     color: #FFF;
+
 }
 
 .botao:hover {
     background-color: #6C8AE6;
-    color: #000;
+    color: #fff;
 }
 
-/*Estilização do footer*/
+/* Estilização da Introdução */
+.introducao {
+    display: grid; 
+    padding: 40px;
+    background-color: #5CE0C4;
+    text-align: end;
+    align-content: center;
+    gap: 20px;
+    justify-items: end;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    font-size: 64px;
+    text-align: end;
+    padding: 40px;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.2)
+     
+}
+/* Estiização das vantagens*/
+
+.vantagens {
+    background-color: #5CE0C4;
+    padding: 40px;
+
+}
+.vantagens-item {
+     display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+
+}
+   .vantagens-item p {
+    grid-column: 2;
+
+   }
+
+/* Estilização do Footer */
 .rodape {
     background-color: #5CE0C4;
     text-align: center;
     padding: 40px;
+    width: 95% ;
 }
